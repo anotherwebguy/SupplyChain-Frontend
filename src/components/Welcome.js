@@ -56,6 +56,7 @@ function Welcome() {
                 </div>
             </section>
 
+            {/* About */}
             <section className="section pt-0 position-relative pull-top">
                 <div className="container">
                     <div className="rounded shadow p-5 bg-white">
