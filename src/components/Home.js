@@ -15,7 +15,7 @@ function Home() {
     return (
         <div className='home-body'>
             <div className='left-body'>
-                <Sidebar></Sidebar>
+                <Sidebar dash="1"></Sidebar>
             </div>
             <div className='right-body'>
                 <Dashboard></Dashboard>

@@ -9,8 +9,8 @@ import Prediction from "./Prediction";
 import Recommendation from "./Recommendation";
 import Dashboard from "./Dashboard";
 
-function Sidebar() {
-
+function Sidebar(props) {
+  let { dash, pred, rec} = props;
   return (
     <div className='sidebar-body'>
       <div className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-0 fixed-start ms-0   bg-gradient-dark" id="sidenav-main">
@@ -31,7 +31,7 @@ function Sidebar() {
             <li className="nav-item nav-tile">
               <Link to='/'>
               <a
-                className="nav-link text-white active bg-gradient-success">
+                className={`nav-link text-white ${dash ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">dashboard</i>
                 </div>
@@ -46,7 +46,7 @@ function Sidebar() {
             </li>
             <li className="nav-item nav-tile">
               <Link to='/predictions'>
-              <a className="nav-link text-white ">
+              <a className={`nav-link text-white ${pred ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
                 </div>
@@ -56,7 +56,7 @@ function Sidebar() {
             </li>
             <li className="nav-item nav-tile">
               <Link to='/recommendations'>
-              <a className="nav-link text-white ">
+              <a className={`nav-link text-white ${rec ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
                 </div>

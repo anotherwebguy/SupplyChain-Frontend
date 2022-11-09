@@ -72,19 +72,6 @@ function Commodity() {
                             <div className="comm-filledbar"></div>
                         </div>
                     </div>
-                    <div className="comm-card">
-                        <a href="" >
-                            <div className="comm-circle">
-                                <img src="https://img.icons8.com/color/48/000000/potato.png" />
-                            </div>
-                            <h3 className="comm-title"><span class="comm-title">Sunflower</span></h3>
-                        </a>
-                        <div className="comm-bar">
-                            <div className="comm-emptybar"></div>
-                            <div className="comm-filledbar"></div>
-                        </div>
-
-                    </div>
                 </div>
                 <div class="row">
 
@@ -142,18 +129,6 @@ function Commodity() {
                                 <img src="https://img.icons8.com/color/48/000000/paper-bag-with-seeds.png" />
                             </div>
                             <h3 className="comm-title"><span class="comm-title">Arhar</span></h3>
-                        </a>
-                        <div className="comm-bar">
-                            <div className="comm-emptybar"></div>
-                            <div className="comm-filledbar"></div>
-                        </div>
-                    </div>
-                    <div className="comm-card1">
-                        <a href="" >
-                            <div className="comm-circle">
-                                <img src="https://img.icons8.com/color/48/000000/peanuts.png" />
-                            </div>
-                            <h3 className="comm-title"><span class="comm-title">Groundnut</span></h3>
                         </a>
                         <div className="comm-bar">
                             <div className="comm-emptybar"></div>
@@ -224,18 +199,6 @@ function Commodity() {
                             <div className="comm-filledbar"></div>
                         </div>
                     </div>
-                    <div className="comm-card">
-                        <a href="" >
-                            <div className="comm-circle">
-                                <img src="https://img.icons8.com/color/48/000000/paper-bag-with-seeds.png" />
-                            </div>
-                            <h3 className="comm-title"><span class="comm-title">Safflower</span></h3>
-                        </a>
-                        <div className="comm-bar">
-                            <div className="comm-emptybar"></div>
-                            <div className="comm-filledbar"></div>
-                        </div>
-                    </div>
                 </div>
                 <div class="row">
                     <div className="comm-card1">
@@ -262,8 +225,6 @@ function Commodity() {
                             <div className="comm-filledbar"></div>
                         </div>
                     </div>
-
-
                     <div className="comm-card1">
                         <a href="">
                             <div className="comm-circle">
@@ -301,7 +262,45 @@ function Commodity() {
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div className="comm-card">
+                        <a href="" >
+                            <div className="comm-circle">
+                                <img src="https://img.icons8.com/color/48/000000/potato.png" />
+                            </div>
+                            <h3 className="comm-title"><span class="comm-title">Sunflower</span></h3>
+                        </a>
+                        <div className="comm-bar">
+                            <div className="comm-emptybar"></div>
+                            <div className="comm-filledbar"></div>
+                        </div>
 
+                    </div>
+                    <div className="comm-card1">
+                        <a href="" >
+                            <div className="comm-circle">
+                                <img src="https://img.icons8.com/color/48/000000/peanuts.png" />
+                            </div>
+                            <h3 className="comm-title"><span class="comm-title">Groundnut</span></h3>
+                        </a>
+                        <div className="comm-bar">
+                            <div className="comm-emptybar"></div>
+                            <div className="comm-filledbar"></div>
+                        </div>
+                    </div>
+                    <div className="comm-card">
+                        <a href="" >
+                            <div className="comm-circle">
+                                <img src="https://img.icons8.com/color/48/000000/paper-bag-with-seeds.png" />
+                            </div>
+                            <h3 className="comm-title"><span class="comm-title">Safflower</span></h3>
+                        </a>
+                        <div className="comm-bar">
+                            <div className="comm-emptybar"></div>
+                            <div className="comm-filledbar"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div >
     )

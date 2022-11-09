@@ -14,7 +14,7 @@ function Prediction() {
     return (
         <div className='home-body'>
             <div className='left-body'>
-                <Sidebar></Sidebar>
+                <Sidebar pred="1"></Sidebar>
             </div>
             <div className='right-body'>
                 <div className='nav-body'>

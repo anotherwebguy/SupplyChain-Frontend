@@ -20,7 +20,7 @@ function Recommendation() {
     return (
         <div className='home-body'>
             <div className='left-body'>
-                <Sidebar></Sidebar>
+                <Sidebar rec="1"></Sidebar>
             </div>
             <div className='right-body'>
                 <div className='nav-recom'>
