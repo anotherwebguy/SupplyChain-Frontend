@@ -1,11 +1,11 @@
 import React from 'react'
-import '../css/predictedvalues.css';
-import gain from '../images/gain-icon.png';
-import loss from '../images/loss-icon.png';
-import '../css/nucleo-icons.css'
-import '../css/nucleo-svg.css'
-import '../css/bootstrap.css'
-import '../css/material-dashboard.css'
+import '../../css/predictedvalues.css';
+import gain from '../../images/gain-icon.png';
+import loss from '../../images/loss-icon.png';
+import '../../css/nucleo-icons.css'
+import '../../css/nucleo-svg.css'
+import '../../css/bootstrap.css'
+import '../../css/material-dashboard.css'
 
 function PredictedValues() {
     return (

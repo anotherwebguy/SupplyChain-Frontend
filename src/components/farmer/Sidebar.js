@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import '../css/bootstrap.css'
-import logo from '../images/logo-ct.png'
-import '../css/material-dashboard.css'
-import '../css/sidebar.css'
+import '../../css/bootstrap.css'
+import logo from '../../images/logo-ct.png'
+import '../../css/material-dashboard.css'
+import '../../css/sidebar.css'
 import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 import Home from "./Home";
 import Prediction from "./Prediction";

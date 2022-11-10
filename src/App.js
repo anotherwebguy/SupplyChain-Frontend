@@ -1,9 +1,9 @@
-import Recommendation from './components/Recommendation';
-import Home from './components/Home';
-import Commodity from './components/Commodity';
+import Recommendation from './components/farmer/Recommendation';
+import Home from './components/farmer/Home';
+import Commodity from './components/farmer/Commodity';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Prediction from './components/Prediction';
-import Result from './components/Result';
+import Prediction from './components/farmer/Prediction';
+import Result from './components/farmer/Result';
 
 function App() {
   return (

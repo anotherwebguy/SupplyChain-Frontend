@@ -1,9 +1,9 @@
 import React from 'react'
-import '../css/nucleo-icons.css'
-import '../css/nucleo-svg.css'
-import '../css/bootstrap.css'
-import '../css/material-dashboard.css'
-import '../css/prediction.css'
+import '../../css/nucleo-icons.css'
+import '../../css/nucleo-svg.css'
+import '../../css/bootstrap.css'
+import '../../css/material-dashboard.css'
+import '../../css/prediction.css'
 
 function Commodity() {
     return (
