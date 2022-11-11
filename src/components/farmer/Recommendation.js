@@ -9,6 +9,7 @@ import Result from './Result'
 import { useNavigate } from 'react-router-dom'
 import axios from '../../django-ML-Api/axios'
 import requests from '../../django-ML-Api/requests'
+import SubNav from '../../utils/SubNav'
 
 function Recommendation() {
 
@@ -133,21 +134,7 @@ function Recommendation() {
                 <Sidebar rec="1"></Sidebar>
             </div>
             <div className='right-body'>
-                <div className='nav-recom'>
-                    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-1 shadow-none border-radius-xl" id="navbarBlur"
-                        navbar-scroll="true">
-                        <div class="container-fluid py-1 px-3">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-                                    <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a>
-                                    </li>
-                                    <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Recommendations</li>
-                                </ol>
-                                <h6 class="font-weight-bolder mb-0">Recommendations</h6>
-                            </nav>
-                        </div>
-                    </nav>
-                </div>
+                <SubNav heading='Recommendations'></SubNav>
 
 
                 {/* Crop Recommendation Form */}
