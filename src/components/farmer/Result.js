@@ -5,8 +5,10 @@ import '../../css/bootstrap.css'
 import '../../css/material-dashboard.css'
 import '../../css/result.css'
 import Sidebar from './Sidebar'
+import {useLocation} from 'react-router-dom'
 
 function Result() {
+    const location = useLocation();
     return (
         <div className='home-body'>
             <div className='left-body'>
@@ -45,11 +47,10 @@ function Result() {
                                     </div>
                                 </div>
                                 <hr className="dark horizontal my-0" />
-                                <img src="{{result_data.1}}" className="rounded-3 result-img" />
+                                <img src={location.state.data[1]} className="rounded-3 result-img" />
                                 <div className='result--body'>
-                                    <h5>Prediction Result: Anjeer</h5>
-                                    <p>Description: very good</p>
-                                    <h6>Accuracy: 100%</h6>
+                                    <h5>Prediction Result: {location.state.data[0]}</h5>
+                                    <p><h6>Description:</h6> {location.state.data[2]}</p>
                                 </div>
                             </div>
                         </div>
