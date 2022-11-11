@@ -4,13 +4,13 @@ import logo from '../../images/logo-ct.png'
 import '../../css/material-dashboard.css'
 import '../../css/sidebar.css'
 import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
-import Home from "./Home";
+import Home from "./Dashboard";
 import Prediction from "./Prediction";
 import Recommendation from "./Recommendation";
 import Dashboard from "./Dashboard";
 
 function Sidebar(props) {
-  let { dash, pred, rec} = props;
+  let { dash, pred, rec, broad, farmbroad, micro, proreq, trans} = props;
   return (
     <div className='sidebar-body'>
       <div className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-0 fixed-start ms-0   bg-gradient-dark" id="sidenav-main">
@@ -64,6 +64,57 @@ function Sidebar(props) {
               </a>
               </Link>
             </li>
+            <li className="nav-item nav-tile">
+              <Link to='/broadcast'>
+              <a className={`nav-link text-white ${broad ? "active bg-gradient-success" : ""}`}>
+                <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i className="material-icons opacity-10">table_view</i>
+                </div>
+                <span className="nav-link-text ms-1">Broadcast</span>
+              </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/farmerbroadcast'>
+              <a className={`nav-link text-white ${farmbroad ? "active bg-gradient-success" : ""}`}>
+                <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i className="material-icons opacity-10">table_view</i>
+                </div>
+                <span className="nav-link-text ms-1">Farmer Broadcasts</span>
+              </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/transactions'>
+              <a className={`nav-link text-white ${trans ? "active bg-gradient-success" : ""}`}>
+                <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i className="material-icons opacity-10">table_view</i>
+                </div>
+                <span className="nav-link-text ms-1">Transactions</span>
+              </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/microfinance'>
+              <a className={`nav-link text-white ${micro ? "active bg-gradient-success" : ""}`}>
+                <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i className="material-icons opacity-10">table_view</i>
+                </div>
+                <span className="nav-link-text ms-1">Micro Finance</span>
+              </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/processorRequests'>
+              <a className={`nav-link text-white ${proreq ? "active bg-gradient-success" : ""}`}>
+                <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i className="material-icons opacity-10">table_view</i>
+                </div>
+                <span className="nav-link-text ms-1">Processor Requests</span>
+              </a>
+              </Link>
+            </li>
+
           </ul>
         </div>
       </div>

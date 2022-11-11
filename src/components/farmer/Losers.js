@@ -6,9 +6,36 @@ import '../../css/material-dashboard.css'
 import '../../css/gainers.css'
 import loss from '../../images/loss-icon.png'
 
-function Losers() {
-  return (
-    <div className='losers-body'>
+function Losers(props) {
+
+    const {losers} = props
+
+    const list = losers.map((element) => {
+        return (
+            <tr>
+                <td>
+                    <div className="d-flex px-2 py-1">
+                        <div>
+                            <i className="material-icons opacity-10">agriculture</i>
+                        </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div className="d-flex flex-column justify-content-center">
+                            <h5 className="mb-0 text-sm">{element.item}</h5>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <p className="text-xs font-weight-bold mb-0">₹{element.price}</p>
+                </td>
+                <td className="align-middle text-center text-sm">
+                    <h6 className="mb-0 text-sm">{element.change}% <img
+                        src={loss} height="25" width="25" /></h6>
+                </td>
+            </tr>
+        );
+    })
+
+    return (
+        <div className='losers-body'>
             <div className="container-fluid py-0">
                 <div className="row">
                     <div className="col-12">
@@ -25,7 +52,7 @@ function Losers() {
                                             <tr>
                                                 <th
                                                     className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                    Item Name</th>
+                                                    Crop Name</th>
                                                 <th
                                                     className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                                     Price (per Qtl.)</th>
@@ -35,27 +62,9 @@ function Losers() {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {/* {% for item in top5 %} */}
-                                            <tr>
-                                                <td>
-                                                    <div className="d-flex px-2 py-1">
-                                                        <div>
-                                                            <i className="material-icons opacity-10">agriculture</i>
-                                                        </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <div className="d-flex flex-column justify-content-center">
-                                                            <h5 className="mb-0 text-sm">item-1</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <p className="text-xs font-weight-bold mb-0">₹500</p>
-                                                </td>
-                                                <td className="align-middle text-center text-sm">
-                                                    <h6 className="mb-0 text-sm">2% <img
-                                                        src={loss} height="25" width="25" /></h6>
-                                                </td>
-                                            </tr>
-                                            {/* {% endfor %} */}
+                                            {
+                                                list
+                                            }
                                         </tbody>
                                     </table>
                                 </div>
@@ -65,7 +74,7 @@ function Losers() {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default Losers
