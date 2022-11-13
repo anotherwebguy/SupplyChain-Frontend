@@ -1,12 +1,12 @@
 import React from 'react'
 import SubNav from '../../utils/SubNav'
-import ProcessorSidebar from './ProcessorSidebar'
+import RetailerSidebar from './RetailerSidebar'
 
-function ProcessorBroadcast() {
+function BroadcastToCustomer() {
     return (
         <div className='home-body'>
             <div className='left-body'>
-                <ProcessorSidebar pbroad='1'></ProcessorSidebar>
+                <RetailerSidebar broadcastToCustomer='1'></RetailerSidebar>
             </div>
             <div className='right-body'>
                 <SubNav heading='Broadcast'></SubNav>
@@ -25,8 +25,16 @@ function ProcessorBroadcast() {
                             </div>
                             <div className='crop-body'>
                                 <form role="form" action="" method="POST" name="form">
-                                <select id="available_crop" name="crops" class="form-select form-select-lg mb-3" >
-                                        <option selected>Select available crops</option>
+                                    <select id="processor_keys" name="retailer" class="form-select form-select-lg mb-3" >
+                                        <option selected>Select Processor Keys</option>
+                                        <option value="Sandy">Maize</option>
+                                        <option value="Loamy">Chana</option>
+                                        <option value="Black">Jowar</option>
+                                        <option value="Red">Wheat</option>
+                                        <option value="Clayey">Paddy</option>
+                                    </select>
+                                    <select id="produce" name="retailer" class="form-select form-select-lg mb-3" >
+                                        <option selected>Select Produce</option>
                                         <option value="Sandy">Maize</option>
                                         <option value="Loamy">Chana</option>
                                         <option value="Black">Jowar</option>
@@ -34,17 +42,14 @@ function ProcessorBroadcast() {
                                         <option value="Clayey">Paddy</option>
                                     </select>
                                     <div class="input-group input-group-outline mb-3">
-                                        <input type="text" id="P" name="P" class="form-control" placeholder='Enter crop name' />
-                                    </div>
-                                    <div class="input-group input-group-outline mb-3">
                                         <input type="text" id="K" name="K" class="form-control" placeholder='Quantity' />
                                     </div>
                                     <div class="input-group input-group-outline mb-3">
-                                        <input type="text" id="temperature" name="temperature" class="form-control" placeholder='Expected Price (in ₹)' />
+                                        <input type="text" id="temperature" name="temperature" class="form-control" placeholder='Price for each unit (in ₹)' />
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" name="broadcastCrop"
-                                            class="btn btn-lg bg-gradient-info btn-lg w-100 mt-4 mb-0">Add</button>
+                                            class="btn btn-lg bg-gradient-info btn-lg w-100 mt-4 mb-0">Broadcast</button>
                                     </div>
                                 </form>
                             </div>
@@ -56,4 +61,4 @@ function ProcessorBroadcast() {
     )
 }
 
-export default ProcessorBroadcast
+export default BroadcastToCustomer

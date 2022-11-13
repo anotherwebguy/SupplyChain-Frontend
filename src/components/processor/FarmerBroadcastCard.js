@@ -14,7 +14,7 @@ function FarmerBroadcastCard(props) {
                         <i className="material-icons opacity-10">grass</i>
                     </div>
                     <div className="text-end pt-1">
-                        <p className="text-sm mb-0 text-capitalize">{crop}</p>
+                        <p className="text-md mb-0 text-capitalize">{crop}</p>
                         <h4 className="mb-0">{name}</h4>
                     </div>
                 </div>

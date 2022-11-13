@@ -22,7 +22,7 @@ function FarmerProductBroadcast() {
   ]
 
   const list = details.map((d) => {
-    return(
+    return (
       <FarmerBroadcastCard crop={d.crop} name={d.name} price={d.price} quantity={d.available}></FarmerBroadcastCard>
     );
   })
@@ -34,10 +34,12 @@ function FarmerProductBroadcast() {
       </div>
       <div className='right-body'>
         <SubNav heading='Farmer Broadcasts'></SubNav>
-        <h3>Farmer Broadcasts!</h3>
-        <div className="container-fluid py-4">
-          <div className="row">
-            {list}
+        <div className='broadcast-body'>
+          <h3>Farmer Broadcasts!</h3>
+          <div className="container-fluid py-4">
+            <div className="row">
+              {list}
+            </div>
           </div>
         </div>
       </div>

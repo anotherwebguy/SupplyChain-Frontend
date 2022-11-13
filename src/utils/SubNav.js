@@ -15,7 +15,6 @@ function SubNav(props) {
                         </li>
                         <li class="breadcrumb-item text-sm text-dark active" aria-current="page">{heading}</li>
                     </ol>
-                    <h6 class="font-weight-bolder mb-0">{heading}</h6>
                 </nav>
             </div>
         </nav>
