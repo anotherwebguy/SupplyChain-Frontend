@@ -1,14 +1,12 @@
 import React from 'react'
+import InterestCard from '../../utils/InterestCard'
 import SubNav from '../../utils/SubNav'
 import ProcessorSidebar from './ProcessorSidebar'
 
-function OrderDetails() {
+function RejectedInterest() {
 
     const data = [
-        { product: 'Wheat', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Chana', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Gram', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Watermelon', retailer: 'Yoshi', price: 100, quantity: 20 },
+        { name: 'Mohit', price: 100, quantity: 20 }
     ]
 
     const list = data.map((d) => {
@@ -20,15 +18,7 @@ function OrderDetails() {
                             <i className="material-icons opacity-10">grass</i>
                         </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div className="d-flex flex-column justify-content-center">
-                            <h5 className="mb-0 text-sm">{d.product}</h5>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                <div className="d-flex px-2 py-1">
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <div className="d-flex flex-column justify-content-center">
-                            <h5 className="mb-0 text-sm">{d.retailer}</h5>
+                            <h5 className="mb-0 text-sm">{d.name}</h5>
                         </div>
                     </div>
                 </td>
@@ -45,10 +35,10 @@ function OrderDetails() {
     return (
         <div className='home-body'>
             <div className='left-body'>
-                <ProcessorSidebar orderDetails='1'></ProcessorSidebar>
+                <ProcessorSidebar rejected='1'></ProcessorSidebar>
             </div>
             <div className='right-body'>
-                <SubNav heading='Order Details'></SubNav>
+                <SubNav heading='Rejected Interest'></SubNav>
                 <br></br>
                 <div className='gainers-body'>
                     <div className="container-fluid py-0">
@@ -57,7 +47,7 @@ function OrderDetails() {
                                 <div className="card my-4">
                                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                         <div className="bg-gradient-danger shadow-success border-radius-lg pt-4 pb-3">
-                                            <h6 className="text-white text-capitalize ps-3">Order Details</h6>
+                                            <h6 className="text-white text-capitalize ps-3">Rejected Interests!</h6>
                                         </div>
                                     </div>
                                     <div className="card-body px-0 pb-2">
@@ -66,14 +56,13 @@ function OrderDetails() {
                                                 <thead>
                                                     <tr>
                                                         <th
-                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Product Name</th>
+                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                            Farmer Name</th>
                                                         <th
-                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Retailer Name</th>
-                                                        <th
-                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Price</th>
+                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Price Quoted</th>
                                                         <th
                                                             className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                            Quantity</th>
+                                                            Quantity Requested</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -94,4 +83,4 @@ function OrderDetails() {
     )
 }
 
-export default OrderDetails
+export default RejectedInterest

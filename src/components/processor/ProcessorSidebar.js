@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 
 
 function ProcessorSidebar(props) {
-  let { dash, pbroad, ybroad, orderDetails, fbroad } = props;
+  let { dash, pbroad, ybroad, orderDetails, fbroad, pInterest, ppayment, addreport, reportpayment, rejected } = props;
   return (
     <div className='sidebar-body'>
       <div className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-0 fixed-start ms-0   bg-gradient-dark" id="sidenav-main">
@@ -21,7 +21,7 @@ function ProcessorSidebar(props) {
         </div>
         <hr className="horizontal light mt-0 mb-2" />
         <div
-          className="collapse navbar-collapse  w-auto  max-height-vh-100"
+          className="collapse navbar-collapse  w-auto  max-height-vh-100 mb-3"
           id="sidenav-collapse-main"
         >
           <ul className="navbar-nav">
@@ -85,6 +85,57 @@ function ProcessorSidebar(props) {
                 </a>
               </Link>
             </li>
+            <li className="nav-item nav-tile">
+              <Link to='/pInterest'>
+                <a className={`nav-link text-white ${pInterest ? "active bg-gradient-danger" : ""}`}>
+                  <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i className="material-icons opacity-10">table_view</i>
+                  </div>
+                  <span className="nav-link-text ms-1">Processor Interest</span>
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/payments'>
+                <a className={`nav-link text-white ${ppayment ? "active bg-gradient-danger" : ""}`}>
+                  <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i className="material-icons opacity-10">table_view</i>
+                  </div>
+                  <span className="nav-link-text ms-1">Pending Payments</span>
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/addreport'>
+                <a className={`nav-link text-white ${addreport ? "active bg-gradient-danger" : ""}`}>
+                  <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i className="material-icons opacity-10">table_view</i>
+                  </div>
+                  <span className="nav-link-text ms-1">Add Report</span>
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/reportswithpayment'>
+                <a className={`nav-link text-white ${reportpayment ? "active bg-gradient-danger" : ""}`}>
+                  <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i className="material-icons opacity-10">table_view</i>
+                  </div>
+                  <span className="nav-link-text ms-1">Reports with Payment</span>
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/rejected'>
+                <a className={`nav-link text-white ${rejected ? "active bg-gradient-danger" : ""}`}>
+                  <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i className="material-icons opacity-10">table_view</i>
+                  </div>
+                  <span className="nav-link-text ms-1">Rejected Interest</span>
+                </a>
+              </Link>
+            </li>
+
           </ul>
         </div>
       </div>

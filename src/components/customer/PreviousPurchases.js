@@ -1,14 +1,11 @@
 import React from 'react'
 import SubNav from '../../utils/SubNav'
-import ProcessorSidebar from './ProcessorSidebar'
+import CustomerSidebar from './CustomerSidebar'
 
-function OrderDetails() {
+function PreviousPurchases() {
 
     const data = [
-        { product: 'Wheat', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Chana', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Gram', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Watermelon', retailer: 'Yoshi', price: 100, quantity: 20 },
+        { item: 'Wheat', price: 200, quantity: 20, retailer: '133j34k', transaction: '123kl3' },
     ]
 
     const list = data.map((d) => {
@@ -17,21 +14,30 @@ function OrderDetails() {
                 <td>
                     <div className="d-flex px-2 py-1">
                         <div>
-                            <i className="material-icons opacity-10">grass</i>
+                            <i className="material-icons opacity-10">shopping_cart</i>
                         </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div className="d-flex flex-column justify-content-center">
-                            <h5 className="mb-0 text-sm">{d.product}</h5>
+                            <h5 className="mb-0 text-sm">{d.item}</h5>
                         </div>
                     </div>
                 </td>
                 <td>
-                <div className="d-flex px-2 py-1">
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div className="d-flex px-2 py-1">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div className="d-flex flex-column justify-content-center">
                             <h5 className="mb-0 text-sm">{d.retailer}</h5>
                         </div>
                     </div>
                 </td>
+                <td>
+                    <div className="d-flex px-2 py-1">
+                        
+                        <div className="d-flex flex-column justify-content-center">
+                            <h5 className="mb-0 text-sm">{d.transaction}</h5>
+                        </div>
+                    </div>
+                </td>
+
                 <td>
                     <p className="text-xs font-weight-bold mb-0">₹ {d.price}</p>
                 </td>
@@ -45,10 +51,10 @@ function OrderDetails() {
     return (
         <div className='home-body'>
             <div className='left-body'>
-                <ProcessorSidebar orderDetails='1'></ProcessorSidebar>
+                <CustomerSidebar prevpurchase='1'></CustomerSidebar>
             </div>
             <div className='right-body'>
-                <SubNav heading='Order Details'></SubNav>
+                <SubNav heading='Previous Purchases'></SubNav>
                 <br></br>
                 <div className='gainers-body'>
                     <div className="container-fluid py-0">
@@ -56,8 +62,8 @@ function OrderDetails() {
                             <div className="col-12">
                                 <div className="card my-4">
                                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                        <div className="bg-gradient-danger shadow-success border-radius-lg pt-4 pb-3">
-                                            <h6 className="text-white text-capitalize ps-3">Order Details</h6>
+                                        <div className="bg-gradient-info shadow-success border-radius-lg pt-4 pb-3">
+                                            <h6 className="text-white text-capitalize ps-3">History</h6>
                                         </div>
                                     </div>
                                     <div className="card-body px-0 pb-2">
@@ -66,14 +72,18 @@ function OrderDetails() {
                                                 <thead>
                                                     <tr>
                                                         <th
-                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Product Name</th>
+                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                            Item Name</th>
                                                         <th
-                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Retailer Name</th>
+                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Retailer ID</th>
+                                                            <th
+                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Transaction ID</th>
                                                         <th
                                                             className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Price</th>
                                                         <th
                                                             className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                                             Quantity</th>
+                                                        
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -94,4 +104,4 @@ function OrderDetails() {
     )
 }
 
-export default OrderDetails
+export default PreviousPurchases
