@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../css/nucleo-icons.css'
 import '../../css/nucleo-svg.css'
 import '../../css/bootstrap.css'
@@ -10,21 +10,32 @@ import Gainers from './Gainers'
 import Losers from './Losers'
 import Sidebar from './Sidebar'
 import SubNav from '../../utils/SubNav'
+import axios from '../../django-ML-Api/axios'
+import requests from '../../django-ML-Api/requests'
 
 function Prediction() {
 
-    const object = [{
-        item: 'item1',
-        price: 100,
-        change: 2
-    },
-    {
-        item: 'item2',
-        price: 200,
-        change: 4
-    }
-    ]
+    const [TopGainers, setTopGainers] = React.useState([])
+    const [TopLosers, setTopLosers] = React.useState([])
+    const [sixmonths, setSixmonths] = React.useState([])
 
+    const getSixMonths = async () => {
+        const response = await axios.get(requests.winnersloosersApi);
+        console.log(response.data.top5)
+        setTopGainers(response.data.top5)
+        console.log(response.data.bottom5)
+        setTopLosers(response.data.bottom5)
+        console.log(response.data.sixmonths)
+        setSixmonths(response.data.sixmonths)
+    }
+
+    useEffect(() => {
+        getSixMonths();
+    }, [])
+    
+    if(TopGainers.length === 0 || TopLosers.length === 0 || sixmonths.length === 0){
+        return <div>Loading...</div>
+    }
     return (
         <div className='home-body'>
             <div className='left-body'>
@@ -35,15 +46,15 @@ function Prediction() {
 
                 {/* Prediction values for next months */}
 
-                <PredictedValues></PredictedValues>
+                <PredictedValues sixmonth = {sixmonths}></PredictedValues>
 
                 {/* Top Gainers */}
 
-                <Gainers obj={object}></Gainers>
+                <Gainers obj={TopGainers}></Gainers>
 
                 {/* Top Losers */}
 
-                <Losers losers={object}></Losers>
+                <Losers losers={TopLosers}></Losers>
 
                 {/* Commodity section */}
 

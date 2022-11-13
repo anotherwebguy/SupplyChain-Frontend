@@ -36,7 +36,8 @@ function Result() {
                                 <img src={location.state.data[1]} className="rounded-3 result-img" />
                                 <div className='result--body'>
                                     <h5>Prediction Result: {location.state.data[0]}</h5>
-                                    <p><h6>Description:</h6> {location.state.data[2]}</p>
+                                    <h6>Description:</h6>
+                                    <p>{location.state.data[2]}</p>
                                 </div>
                             </div>
                         </div>

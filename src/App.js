@@ -14,6 +14,7 @@ import ProcessorBroadcast from './components/processor/ProcessorBroadcast';
 import YourBroadcast from './components/processor/YourBroadcast';
 import OrderDetails from './components/processor/OrderDetails';
 import FarmerProductBroadcast from './components/processor/FarmerProductBroadcast';
+import Crop from './components/farmer/Crop';
 
 function App() {
   return (
@@ -21,13 +22,14 @@ function App() {
         <Routes>
         <Route path='/' element={<Dashboard/>}></Route>
         <Route path='/predictions' element={<Prediction/>}></Route>
-        <Route path='/recommendations' element={<Recommendation/>}></Route>
+        <Route path='/recommendations/' element={<Recommendation/>}></Route>
         <Route path='/recommendations/result' element={<Result/>}></Route>
         <Route path='/broadcast' element={<Broadcast/>}></Route>
         <Route path='/farmerbroadcast' element={<FarmerBroadcast/>}></Route>
         <Route path='/microfinance' element={<MicroFinance/>}></Route>
         <Route path='/processorRequests' element={<ProcessorRequest/>}></Route>
-        <Route path='/transactions' element={<Transactions/>}></Route>
+        <Route path='/transactions' element={<Transactions/>}></Route>  
+        <Route path='/predictions/commodity' element={<Crop/>}></Route>
       </Routes>
       </BrowserRouter>
       // <BrowserRouter>

@@ -19,15 +19,15 @@ function Losers(props) {
                             <i className="material-icons opacity-10">agriculture</i>
                         </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div className="d-flex flex-column justify-content-center">
-                            <h5 className="mb-0 text-sm">{element.item}</h5>
+                            <h5 className="mb-0 text-sm">{element[0]}</h5>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <p className="text-xs font-weight-bold mb-0">₹{element.price}</p>
+                    <p className="text-xs font-weight-bold mb-0">₹{element[1]}</p>
                 </td>
                 <td className="align-middle text-center text-sm">
-                    <h6 className="mb-0 text-sm">{element.change}% <img
+                    <h6 className="mb-0 text-sm">{element[2]}% <img
                         src={loss} height="25" width="25" /></h6>
                 </td>
             </tr>

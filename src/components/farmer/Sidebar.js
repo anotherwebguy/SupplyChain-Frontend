@@ -10,7 +10,7 @@ import Recommendation from "./Recommendation";
 import Dashboard from "./Dashboard";
 
 function Sidebar(props) {
-  let { dash, pred, rec, broad, farmbroad, micro, proreq, trans} = props;
+  let { dash, pred, rec, fer, broad, farmbroad, micro, proreq, trans} = props;
   return (
     <div className='sidebar-body'>
       <div className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-0 fixed-start ms-0   bg-gradient-dark" id="sidenav-main">
