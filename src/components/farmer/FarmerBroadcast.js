@@ -83,8 +83,6 @@ function FarmerBroadcast() {
                                                     {
                                                         list
                                                     }
-
-                                                    {/* {% endfor %} */}
                                                 </tbody>
                                             </table>
                                         </div>

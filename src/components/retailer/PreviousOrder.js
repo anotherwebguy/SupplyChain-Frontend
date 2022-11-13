@@ -1,14 +1,15 @@
 import React from 'react'
 import SubNav from '../../utils/SubNav'
-import ProcessorSidebar from './ProcessorSidebar'
+import RetailerSidebar from './RetailerSidebar'
 
-function OrderDetails() {
+function PreviousOrder() {
 
     const data = [
-        { product: 'Wheat', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Chana', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Gram', retailer: 'Yoshi', price: 100, quantity: 20 },
-        { product: 'Watermelon', retailer: 'Yoshi', price: 100, quantity: 20 },
+        { product:'Wheat', price: 200, quantity: 20 },
+        { product:'Sugarcane', price: 200, quantity: 20 },
+        { product:'Paddy', price: 200, quantity: 20 },
+        { product:'Maize', price: 200, quantity: 20 },
+        { product:'Copra', price: 200, quantity: 20 },
     ]
 
     const list = data.map((d) => {
@@ -25,14 +26,6 @@ function OrderDetails() {
                     </div>
                 </td>
                 <td>
-                <div className="d-flex px-2 py-1">
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <div className="d-flex flex-column justify-content-center">
-                            <h5 className="mb-0 text-sm">{d.retailer}</h5>
-                        </div>
-                    </div>
-                </td>
-                <td>
                     <p className="text-xs font-weight-bold mb-0">₹ {d.price}</p>
                 </td>
                 <td className="align-middle text-center text-sm">
@@ -45,10 +38,10 @@ function OrderDetails() {
     return (
         <div className='home-body'>
             <div className='left-body'>
-                <ProcessorSidebar orderDetails='1'></ProcessorSidebar>
+                <RetailerSidebar prevorder='1' />
             </div>
             <div className='right-body'>
-                <SubNav heading='Order Details'></SubNav>
+                <SubNav heading='Previous Orders'></SubNav>
                 <br></br>
                 <div className='gainers-body'>
                     <div className="container-fluid py-0">
@@ -56,8 +49,8 @@ function OrderDetails() {
                             <div className="col-12">
                                 <div className="card my-4">
                                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                        <div className="bg-gradient-danger shadow-success border-radius-lg pt-4 pb-3">
-                                            <h6 className="text-white text-capitalize ps-3">Order Details</h6>
+                                        <div className="bg-gradient-warning shadow-success border-radius-lg pt-4 pb-3">
+                                            <h6 className="text-white text-capitalize ps-3">Previous Order Details</h6>
                                         </div>
                                     </div>
                                     <div className="card-body px-0 pb-2">
@@ -66,9 +59,8 @@ function OrderDetails() {
                                                 <thead>
                                                     <tr>
                                                         <th
-                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Product Name</th>
-                                                        <th
-                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Retailer Name</th>
+                                                            className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                            Product</th>
                                                         <th
                                                             className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Price</th>
                                                         <th
@@ -94,4 +86,4 @@ function OrderDetails() {
     )
 }
 
-export default OrderDetails
+export default PreviousOrder
