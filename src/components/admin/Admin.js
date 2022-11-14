@@ -5,13 +5,13 @@ import qr from '../../images/qr.png'
 import block from '../../images/logo-ct.png'
 
 function Admin() {
-  return (
-    <div>
+    return (
+        <div>
             {/* navbar to display admin dashboard */}
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand text-white" href="#">
-                    <img src={block} width="30" height="30" class="d-inline-block align-top" alt=""/>&nbsp;
-                     Admin Dashboard
+                    <img src={block} width="30" height="30" class="d-inline-block align-top" alt="" />&nbsp;
+                    Admin Dashboard
                 </a>
             </nav>
             {/* navbar ends */}
@@ -23,8 +23,8 @@ function Admin() {
                         <div className="card card-stats choti">
                             <div className="card-header moti" data-background-color="orange">
                                 <h2 className="category">Total Users</h2>
-                                <hr/>
-                            </div>  
+                                <hr />
+                            </div>
                             <div className="card-content">
                                 <div className="row">
                                     <div className="col-md-4 badal">
@@ -41,7 +41,7 @@ function Admin() {
                         <div className="card card-stats choti">
                             <div className="card-header moti" data-background-color="green">
                                 <h2 className="category">Total Roles</h2>
-                                <hr/>
+                                <hr />
                             </div>
                             <div className="card-content">
                                 <div className="row">
@@ -59,7 +59,7 @@ function Admin() {
                         <div className="card card-stats choti">
                             <div className="card-header moti" data-background-color="red">
                                 <h2 className="category">Total Batches</h2>
-                                <hr/>
+                                <hr />
                             </div>
                             <div className="card-content">
                                 <div className="row">
@@ -85,11 +85,11 @@ function Admin() {
                             </div>
                             <div className="card-content">
                                 <div className="material-datatables">
-                                    <table id="datatables" className="table table-striped table-no-bordered table-hover" cellSpacing="0" width="100%" style={{width: '100%'}}>
+                                    <table id="datatables" className="table table-striped table-no-bordered table-hover" cellSpacing="0" width="100%" style={{ width: '100%' }}>
                                         <thead>
                                             <tr>
                                                 <th>Product Id</th>
-                                                <th>QR-Code</th>   
+                                                <th>QR-Code</th>
                                                 <th>Broadcast</th>
                                                 <th>Farm Inspection</th>
                                                 <th>Processor</th>
@@ -101,7 +101,7 @@ function Admin() {
                                         <tbody>
                                             <tr>
                                                 <td>0x793c095009deb92846f15745043f5420cabf97ab</td>
-                                                <td><img src={qr} className="chota-hoja"/></td>
+                                                <td><img src={qr} className="chota-hoja" /></td>
                                                 <td><span className="badge bg-success">Completed</span></td>
                                                 <td><span className="badge bg-success">Completed</span></td>
                                                 <td><span className="badge bg-success">Completed</span></td>
@@ -113,7 +113,7 @@ function Admin() {
                                             </tr>
                                             <tr>
                                                 <td>0x793c095009deb92846f15745043f5420cabf97ab</td>
-                                                <td><img src={qr} className="chota-hoja"/></td>
+                                                <td><img src={qr} className="chota-hoja" /></td>
                                                 <td><span className="badge bg-success">Completed</span></td>
                                                 <td><span className="badge bg-success">Completed</span></td>
                                                 <td><span className="badge bg-warning">Processing</span></td>
@@ -125,7 +125,7 @@ function Admin() {
                                             </tr>
                                             <tr>
                                                 <td>0x793c095009deb92846f15745043f5420cabf97ab</td>
-                                                <td><img src={qr} className="chota-hoja"/></td>
+                                                <td><img src={qr} className="chota-hoja" /></td>
                                                 <td><span className="badge bg-warning">Processing</span></td>
                                                 <td><span className="badge bg-danger">Not Available</span></td>
                                                 <td><span className="badge bg-danger">Not Available</span></td>
@@ -419,8 +419,8 @@ function Admin() {
                     </div>
                 </div>
             </div> */}
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Admin

@@ -10,7 +10,7 @@ import Recommendation from "./Recommendation";
 import Dashboard from "./Dashboard";
 
 function Sidebar(props) {
-  let { dash, pred, rec, fer, broad, farmbroad, micro, proreq, trans} = props;
+  let { dash, pred, rec, fer, broad, farmbroad, micro, proreq, trans, status} = props;
   return (
     <div className='sidebar-body'>
       <div className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-0 fixed-start ms-0   bg-gradient-dark" id="sidenav-main">
@@ -81,6 +81,16 @@ function Sidebar(props) {
                   <i className="material-icons opacity-10">table_view</i>
                 </div>
                 <span className="nav-link-text ms-1">Farmer Broadcasts</span>
+              </a>
+              </Link>
+            </li>
+            <li className="nav-item nav-tile">
+              <Link to='/status'>
+              <a className={`nav-link text-white ${status ? "active bg-gradient-success" : ""}`}>
+                <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i className="material-icons opacity-10">table_view</i>
+                </div>
+                <span className="nav-link-text ms-1">Track Status</span>
               </a>
               </Link>
             </li>

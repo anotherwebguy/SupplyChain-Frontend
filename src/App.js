@@ -29,7 +29,11 @@ import CustomerDashboard from './components/customer/CustomerDashboard';
 import CustomerRetailerBroadcast from './components/customer/CustomerRetailerBroadcast';
 import PreviousPurchases from './components/customer/PreviousPurchases';
 import Crop from './components/farmer/Crop';
+import TrackStatus from './components/farmer/TrackStatus';
+import Timeline from './components/farmer/LeftTimelineCard';
 import Admin from './components/admin/Admin';
+import LeftTimelineCard from './components/farmer/LeftTimelineCard';
+import RightTimelineCard from './components/farmer/RightTimelineCard';
 
 function App() {
   return (
@@ -48,6 +52,9 @@ function App() {
         <Route path='/processorRequests' element={<ProcessorRequest />}></Route>
         <Route path='/transactions' element={<Transactions />}></Route> 
         <Route path='/predictions/commodity' element={<Crop />}></Route> 
+        <Route path='/status' element={<TrackStatus/>}></Route>
+       
+
         <Route path='/admin' element={<Admin />}></Route>
         {/* Processor Routing */}
 

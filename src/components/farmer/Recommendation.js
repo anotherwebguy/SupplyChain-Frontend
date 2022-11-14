@@ -70,6 +70,7 @@ function Recommendation() {
         console.log(responseData)
         console.log("idr dhyan de")
         // arr = []
+        console.log(responseData[0]);
         arr.push(responseData[0])
         arr.push(responseData[1])
         arr.push(responseData[2])
