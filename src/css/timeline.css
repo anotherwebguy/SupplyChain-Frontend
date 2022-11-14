@@ -1,0 +1,21 @@
+.container-left{
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.fa-check{
+    color: green;
+}
+
+.left-icon{
+    padding-left: 36.7vw;
+}
+
+.header-image{
+    width: 7vw;
+}
+
+.heading-container{
+    display: flex;
+    justify-content: space-between;
+}

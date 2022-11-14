@@ -6,6 +6,9 @@ function PreviousPurchases() {
 
     const data = [
         { item: 'Wheat', price: 200, quantity: 20, retailer: '133j34k', transaction: '123kl3' },
+        { item: 'Wheat', price: 200, quantity: 20, retailer: '133j34k', transaction: '123kl3' },
+        { item: 'Wheat', price: 200, quantity: 20, retailer: '133j34k', transaction: '123kl3' },
+        { item: 'Wheat', price: 200, quantity: 20, retailer: '133j34k', transaction: '123kl3' },
     ]
 
     const list = data.map((d) => {
@@ -22,12 +25,7 @@ function PreviousPurchases() {
                     </div>
                 </td>
                 <td>
-                    <div className="d-flex px-2 py-1">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <div className="d-flex flex-column justify-content-center">
-                            <h5 className="mb-0 text-sm">{d.retailer}</h5>
-                        </div>
-                    </div>
+                <h5 className="mb-0 text-sm">{d.retailer}</h5>
                 </td>
                 <td>
                     <div className="d-flex px-2 py-1">
