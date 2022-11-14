@@ -31,6 +31,7 @@ import PreviousPurchases from './components/customer/PreviousPurchases';
 import Crop from './components/farmer/Crop';
 import TrackStatus from './components/farmer/TrackStatus';
 import Timeline from './components/farmer/Timeline';
+import Admin from './components/admin/Admin';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
        
         <Route path='/' element={<Timeline/>}></Route>
 
+        <Route path='/admin' element={<Admin />}></Route>
         {/* Processor Routing */}
 
         {/* <Route path='/' element={<ProcessorDashboard/>}></Route>
