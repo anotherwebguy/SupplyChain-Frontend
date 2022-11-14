@@ -29,6 +29,7 @@ import CustomerDashboard from './components/customer/CustomerDashboard';
 import CustomerRetailerBroadcast from './components/customer/CustomerRetailerBroadcast';
 import PreviousPurchases from './components/customer/PreviousPurchases';
 import Crop from './components/farmer/Crop';
+import Admin from './components/admin/Admin';
 
 function App() {
   return (
@@ -47,8 +48,7 @@ function App() {
         <Route path='/processorRequests' element={<ProcessorRequest />}></Route>
         <Route path='/transactions' element={<Transactions />}></Route> 
         <Route path='/predictions/commodity' element={<Crop />}></Route> 
-       
-
+        <Route path='/admin' element={<Admin />}></Route>
         {/* Processor Routing */}
 
         {/* <Route path='/' element={<ProcessorDashboard/>}></Route>
