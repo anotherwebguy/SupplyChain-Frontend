@@ -28,7 +28,7 @@ function QualitySidebar(props) {
         >
           <ul className="navbar-nav">
             <li className="nav-item nav-tile">
-              <Link to='/'>
+              <Link to='/inspector'>
                 <a
                   className={`nav-link text-white ${qreport ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">

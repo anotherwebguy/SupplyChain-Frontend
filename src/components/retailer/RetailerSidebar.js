@@ -25,7 +25,7 @@ function RetailerSidebar(props) {
                 >
                     <ul className="navbar-nav">
                         <li className="nav-item nav-tile">
-                            <Link to='/'>
+                            <Link to='/retailer'>
                                 <a
                                     className={`nav-link text-white ${dash ? "active bg-gradient-warning" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -42,7 +42,7 @@ function RetailerSidebar(props) {
                             <div className="ps-4 ms-2 pb-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Features</div>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/processorbroadcast'>
+                            <Link to='/retailer/processorbroadcast'>
                                 <a className={`nav-link text-white ${processorbroadcast ? "active bg-gradient-warning" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                         <i className="material-icons opacity-10">table_view</i>
@@ -52,7 +52,7 @@ function RetailerSidebar(props) {
                             </Link>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/previousorders'>
+                            <Link to='/retailer/previousorders'>
                                 <a className={`nav-link text-white ${prevorder ? "active bg-gradient-warning" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                         <i className="material-icons opacity-10">table_view</i>
@@ -62,7 +62,7 @@ function RetailerSidebar(props) {
                             </Link>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/retailer-report'>
+                            <Link to='/retailer/retailer-report'>
                                 <a className={`nav-link text-white ${addreport ? "active bg-gradient-warning" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                         <i className="material-icons opacity-10">table_view</i>
@@ -72,7 +72,7 @@ function RetailerSidebar(props) {
                             </Link>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/broadcastToCustomer'>
+                            <Link to='/retailer/broadcastToCustomer'>
                                 <a className={`nav-link text-white ${broadcastToCustomer ? "active bg-gradient-warning" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                         <i className="material-icons opacity-10">table_view</i>

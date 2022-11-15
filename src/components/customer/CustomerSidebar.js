@@ -24,7 +24,7 @@ function CustomerSidebar(props) {
                 >
                     <ul className="navbar-nav">
                         <li className="nav-item nav-tile">
-                            <Link to='/'>
+                            <Link to='/customer'>
                                 <a
                                     className={`nav-link text-white ${dash ? "active bg-gradient-info" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -41,7 +41,7 @@ function CustomerSidebar(props) {
                             <div className="ps-4 ms-2 pb-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Features</div>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/retailerbroadcast'>
+                            <Link to='/customer/retailerbroadcast'>
                                 <a className={`nav-link text-white ${retailer ? "active bg-gradient-info" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                         <i className="material-icons opacity-10">table_view</i>
@@ -51,7 +51,7 @@ function CustomerSidebar(props) {
                             </Link>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/history'>
+                            <Link to='/customer/history'>
                                 <a className={`nav-link text-white ${prevpurchase ? "active bg-gradient-info" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                         <i className="material-icons opacity-10">table_view</i>
