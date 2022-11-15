@@ -12,7 +12,7 @@ function Farmer(props) {
     const navigate = useNavigate()
 
     const changeView = () => {
-        navigate('/investor/status')
+        navigate('/investor/farmstatus')
     }
 
     return (

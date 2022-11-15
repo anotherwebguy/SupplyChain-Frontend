@@ -81,6 +81,7 @@ function App() {
         <Route path='/investor/payments' element={<InvestorPayments/>}></Route>
         <Route path='/investor/rejected' element={<RejectedDeals/>}></Route>
         <Route path='/investor/investments' element={<Investments/>}></Route>
+        <Route path='/investor/farmstatus' element={<FarmerStatus/>}></Route>
         <Route path='/investor/status' element={<FarmerStatus/>}></Route>
 
         {/* Processor Routing */}
