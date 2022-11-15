@@ -62,17 +62,6 @@ function InvestorSidebar(props) {
                             </Link>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/investor/status'>
-                                <a
-                                    className={`nav-link text-white ${status ? "active bg-gradient-info" : ""}`}>
-                                    <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                                        <i className="material-icons opacity-10">dashboard</i>
-                                    </div>
-                                    <span className="nav-link-text ms-1">Track Status</span>
-                                </a>
-                            </Link>
-                        </li>
-                        <li className="nav-item nav-tile">
                             <Link to='/investor/rejected'>
                                 <a
                                     className={`nav-link text-white ${rejected ? "active bg-gradient-info" : ""}`}>

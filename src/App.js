@@ -44,6 +44,8 @@ import CustomerTracking from './components/customer/CustomerTracking';
 import RetailerTracking from './components/retailer/RetailerTracking';
 import FarmerStatus from './components/investor/FarmerStatus';
 import YieldBroadcast from './components/farmer/YieldBroadcast';
+import InvestorDeals from './components/farmer/InvestorDeals';
+import AcceptedDeals from './components/farmer/AcceptedDeals';
 
 function App() {
   return (
@@ -74,6 +76,8 @@ function App() {
         <Route path='/farmer/predictions/commodity' element={<Crop />}></Route> 
         <Route path='/farmer/status' element={<TrackStatus/>}></Route>
         <Route path='/farmer/yieldbroadcast' element={<YieldBroadcast/>}></Route>
+        <Route path='/farmer/investordeals' element={<InvestorDeals/>}></Route>
+        <Route path='/farmer/accepted' element={<AcceptedDeals/>}></Route>
 
         {/* Investor */}
 
@@ -84,7 +88,6 @@ function App() {
         <Route path='/investor/rejected' element={<RejectedDeals/>}></Route>
         <Route path='/investor/investments' element={<Investments/>}></Route>
         <Route path='/investor/farmstatus' element={<FarmerStatus/>}></Route>
-        <Route path='/investor/status' element={<FarmerStatus/>}></Route>
 
         {/* Processor Routing */}
 
