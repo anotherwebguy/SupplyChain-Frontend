@@ -5,8 +5,8 @@ import '../css/verification.css'
 function VerificationList() {
   return (
     <div>
-      <div className="card sizi">
-        <div className="card-header">
+      <div className="cardy sizi">
+        <div className="cardy-header">
           <table>
             <tr>
               <th>Account address:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -14,7 +14,7 @@ function VerificationList() {
             </tr>
           </table> 
         </div>
-        <div className="card-body">
+        <div className="cardy-body">
           <table>
             <tr>
               <th>Name:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -34,7 +34,7 @@ function VerificationList() {
             </tr>
           </table>
         </div>
-        <div className="card-footer text-muted text-center">
+        <div className="cardy-footer text-muted text-center">
           <button type="button " className="btn btn-success siza">Approve</button>
         </div>
       </div>
