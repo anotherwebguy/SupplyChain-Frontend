@@ -39,6 +39,10 @@ import InvestorPayments from './components/investor/InvestorPayments';
 import RejectedDeals from './components/investor/RejectedDeals';
 import Investments from './components/investor/Investments';
 import Welcome from './components/Welcome';
+import ProcessorTracking from './components/processor/ProcessorTracking';
+import CustomerTracking from './components/customer/CustomerTracking';
+import RetailerTracking from './components/retailer/RetailerTracking';
+import FarmerStatus from './components/investor/FarmerStatus';
 
 function App() {
   return (
@@ -77,6 +81,7 @@ function App() {
         <Route path='/investor/payments' element={<InvestorPayments/>}></Route>
         <Route path='/investor/rejected' element={<RejectedDeals/>}></Route>
         <Route path='/investor/investments' element={<Investments/>}></Route>
+        <Route path='/investor/status' element={<FarmerStatus/>}></Route>
 
         {/* Processor Routing */}
 
@@ -90,6 +95,7 @@ function App() {
         <Route path='/processor/addreport' element={<AddReport/>}></Route>
         <Route path='/processor/reportswithpayment' element={<ReportsWithPayment/>}></Route>
         <Route path='/processor/rejected' element={<RejectedInterest/>}></Route>
+        <Route path='/processor/status' element={<ProcessorTracking/>}></Route>
 
         {/* Quality Checker Routing */}
 
@@ -102,12 +108,14 @@ function App() {
         <Route path='/retailer/previousorders' element={<PreviousOrder/>}></Route>
         <Route path='/retailer/retailer-report' element={<RetailerReport/>}></Route>
         <Route path='/retailer/broadcastToCustomer' element={<BroadcastToCustomer/>}></Route>
+        <Route path='/retailer/status' element={<RetailerTracking/>}></Route>
 
         {/* Customer Routing */}
 
         <Route path='/customer' element={<CustomerDashboard/>}></Route>
         <Route path='/customer/retailerbroadcast' element={<CustomerRetailerBroadcast/>}></Route>
         <Route path='/customer/history' element={<PreviousPurchases/>}></Route>
+        <Route path='/customer/status' element={<CustomerTracking/>}></Route>
       </Routes>
     </BrowserRouter>
   );
