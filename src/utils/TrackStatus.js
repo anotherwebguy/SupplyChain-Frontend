@@ -22,12 +22,12 @@ function TrackStatus() {
         if(i%2 === 0){
             i++;
             return(
-                <LeftTimelineCard admin={d.admin} transaction={d.transaction} farmer={d.farmer} farm={d.farm} exporter={d.exporter}></LeftTimelineCard>
+                <LeftTimelineCard admin={d.admin} title={d.title}transaction={d.transaction} farmer={d.farmer} farm={d.farm} exporter={d.exporter}></LeftTimelineCard>
             )
         }
         i++;
         return(
-            <RightTimelineCard admin={d.admin} transaction={d.transaction} farmer={d.farmer} farm={d.farm} exporter={d.exporter}></RightTimelineCard>
+            <RightTimelineCard admin={d.admin} title={d.title}transaction={d.transaction} farmer={d.farmer} farm={d.farm} exporter={d.exporter}></RightTimelineCard>
         )
     })
 
