@@ -1,9 +1,11 @@
 import React from 'react'
-import SubNav from '../../utils/SubNav'
-import Sidebar from './Sidebar'
-import '../../css/bootstrap.css'
+import SubNav from './SubNav'
+import Sidebar from '../components/farmer/Sidebar'
+import '../css/bootstrap.css'
 import LeftTimelineCard from './LeftTimelineCard'
 import RightTimelineCard from './RightTimelineCard'
+import NALeftCard from './NALeftCard'
+import NARightCard from './NARightCard'
 
 function TrackStatus() {
 
@@ -39,6 +41,8 @@ function TrackStatus() {
                 <div className='broadcast-body'>
                     <h3>Batch Report</h3>
                     {list}
+                    <NALeftCard/>
+                    <NARightCard/>
                 </div>
             </div>
         </div>
