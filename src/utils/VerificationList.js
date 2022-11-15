@@ -1,41 +1,43 @@
 import React from 'react'
+import '../css/bootstrap.css'
+import '../css/verification.css'
 
 function VerificationList() {
   return (
     <div>
-      <div
-          className="container-list attention"
-        >
+      <div className="card sizi">
+        <div className="card-header">
           <table>
             <tr>
-              <th>Account address</th>
-              <td>0x237FFFe1beBA4Cd88E6b6e8f2b7aA55DC0556A21</td>
+              <th>Account address:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>0x12345678902712478t2718t</td>
+            </tr>
+          </table> 
+        </div>
+        <div className="card-body">
+          <table>
+            <tr>
+              <th>Name:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>John</td>
             </tr>
             <tr>
-              <th>Name</th>
-              <td>Mohit</td>
+              <th>Contact No:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>1234567890</td>
             </tr>
             <tr>
-              <th>Phone</th>
-              <td>9323456732</td>
+              <th>Address:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>1234 Main St, New York, NY 10001</td>
             </tr>
             <tr>
-              <th>Address</th>
-              <td>Udr se left lekr right jaoge to idr se udr pohuchoge fir waha se right lelo</td>
-            </tr>
-            <tr>
-              <th>Authorized</th>
-              <td>True</td>
+              <th>Role:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>Farmer</td>
             </tr>
           </table>
-          <div style={{}}>
-            <button
-              className="btn-verification approve"
-            >
-              Approve
-            </button>
-          </div>
         </div>
+        <div className="card-footer text-muted text-center">
+          <button type="button " className="btn btn-success siza">Approve</button>
+        </div>
+      </div>
     </div>
   )
 }

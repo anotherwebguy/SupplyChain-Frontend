@@ -1,6 +1,5 @@
 import Recommendation from './components/farmer/Recommendation';
 import Dashboard from './components/farmer/Dashboard';
-import Commodity from './components/farmer/Commodity';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Prediction from './components/farmer/Prediction';
 import Result from './components/farmer/Result';
@@ -30,10 +29,7 @@ import CustomerRetailerBroadcast from './components/customer/CustomerRetailerBro
 import PreviousPurchases from './components/customer/PreviousPurchases';
 import Crop from './components/farmer/Crop';
 import TrackStatus from './utils/TrackStatus';
-import Timeline from './utils/LeftTimelineCard';
 import Admin from './components/admin/Admin';
-import LeftTimelineCard from './utils/LeftTimelineCard';
-import RightTimelineCard from './utils/RightTimelineCard';
 import Registration from './utils/Registration';
 import Verification from './components/admin/Verification';
 import InvestorHome from './components/investor/InvestorHome';
@@ -42,30 +38,36 @@ import InvestorFarmerBroadcast from './components/investor/InvestorFarmerBroadca
 import InvestorPayments from './components/investor/InvestorPayments';
 import RejectedDeals from './components/investor/RejectedDeals';
 import Investments from './components/investor/Investments';
+import Welcome from './components/Welcome';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
 
+        {/* Welcome screen */}
+        <Route path="/" element={<Welcome />} />
+
+        {/* Registration screen */}
+        <Route path="/register" element={<Registration />} />
+
+        {/* Admin panel */}
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin/verification" element={<Verification />} />
+
         {/* Farmer Routing */}
 
-        <Route path='/' element={<Dashboard />}></Route>
-        <Route path='/predictions' element={<Prediction />}></Route>
-        <Route path='/recommendations' element={<Recommendation />}></Route>
-        <Route path='/recommendations/result' element={<Result />}></Route>
-        <Route path='/broadcast' element={<Broadcast />}></Route>
-        <Route path='/farmerbroadcast' element={<FarmerBroadcast />}></Route>
-        <Route path='/microfinance' element={<MicroFinance />}></Route>
-        <Route path='/processorRequests' element={<ProcessorRequest />}></Route>
-        <Route path='/transactions' element={<Transactions />}></Route> 
-        <Route path='/predictions/commodity' element={<Crop />}></Route> 
-        <Route path='/status' element={<TrackStatus/>}></Route>
-       
-
-        <Route path='/admin' element={<Admin />}></Route>
-        <Route path='/register' element={<Registration />}></Route>
-        <Route path='/verification' element={<Verification />}></Route>
+        <Route path='/farmer' element={<Dashboard />}></Route>
+        <Route path='/farmer/predictions' element={<Prediction />}></Route>
+        <Route path='/farmer/recommendations' element={<Recommendation />}></Route>
+        <Route path='/farmer/recommendations/result' element={<Result />}></Route>
+        <Route path='/farmer/broadcast' element={<Broadcast />}></Route>
+        <Route path='/farmer/farmerbroadcast' element={<FarmerBroadcast />}></Route>
+        <Route path='/farmer/microfinance' element={<MicroFinance />}></Route>
+        <Route path='/farmer/processorRequests' element={<ProcessorRequest />}></Route>
+        <Route path='/farmer/transactions' element={<Transactions />}></Route> 
+        <Route path='/farmer/predictions/commodity' element={<Crop />}></Route> 
+        <Route path='/farmer/status' element={<TrackStatus/>}></Route>
 
         {/* Investor */}
 
@@ -78,32 +80,34 @@ function App() {
 
         {/* Processor Routing */}
 
-        {/* <Route path='/' element={<ProcessorDashboard/>}></Route>
-      <Route path='/broadcast' element={<ProcessorBroadcast/>}></Route>
-      <Route path='/ybroadcasts' element={<YourBroadcast/>}></Route>
-      <Route path='/orderDetails' element={<OrderDetails/>}></Route>
-      <Route path='/fbroadcasts' element={<FarmerProductBroadcast/>}></Route>
-      <Route path='/pInterest' element={<ProcessorInterest/>}></Route>
-      <Route path='/payments' element={<PendingPayments/>}></Route>
-      <Route path='/addreport' element={<AddReport/>}></Route>
-      <Route path='/reportswithpayment' element={<ReportsWithPayment/>}></Route>
-      <Route path='/rejected' element={<RejectedInterest/>}></Route> */}
+        <Route path='/processor' element={<ProcessorDashboard/>}></Route>
+        <Route path='/processor/broadcast' element={<ProcessorBroadcast/>}></Route>
+        <Route path='/processor/ybroadcasts' element={<YourBroadcast/>}></Route>
+        <Route path='/processor/orderDetails' element={<OrderDetails/>}></Route>
+        <Route path='/processor/fbroadcasts' element={<FarmerProductBroadcast/>}></Route>
+        <Route path='/processor/pInterest' element={<ProcessorInterest/>}></Route>
+        <Route path='/processor/payments' element={<PendingPayments/>}></Route>
+        <Route path='/processor/addreport' element={<AddReport/>}></Route>
+        <Route path='/processor/reportswithpayment' element={<ReportsWithPayment/>}></Route>
+        <Route path='/processor/rejected' element={<RejectedInterest/>}></Route>
 
         {/* Quality Checker Routing */}
 
-        {/* <Route path='/' element={<QualityReports/>}></Route> */}
+        <Route path='/inspector' element={<QualityReports/>}></Route>
 
         {/* Retailer Routing */}
-        {/* <Route path='/' element={<RetailerDashboard/>}></Route>
-        <Route path='/processorbroadcast' element={<RProcessorBroadcast/>}></Route>
-        <Route path='/previousorders' element={<PreviousOrder/>}></Route>
-        <Route path='/retailer-report' element={<RetailerReport/>}></Route>
-        <Route path='/broadcastToCustomer' element={<BroadcastToCustomer/>}></Route> */}
+
+        <Route path='/retailer' element={<RetailerDashboard/>}></Route>
+        <Route path='/retailer/processorbroadcast' element={<RProcessorBroadcast/>}></Route>
+        <Route path='/retailer/previousorders' element={<PreviousOrder/>}></Route>
+        <Route path='/retailer/retailer-report' element={<RetailerReport/>}></Route>
+        <Route path='/retailer/broadcastToCustomer' element={<BroadcastToCustomer/>}></Route>
 
         {/* Customer Routing */}
-        {/* <Route path='/' element={<CustomerDashboard/>}></Route>
-        <Route path='/retailerbroadcast' element={<CustomerRetailerBroadcast/>}></Route>
-        <Route path='/history' element={<PreviousPurchases/>}></Route> */}
+
+        <Route path='/customer' element={<CustomerDashboard/>}></Route>
+        <Route path='/customer/retailerbroadcast' element={<CustomerRetailerBroadcast/>}></Route>
+        <Route path='/customer/history' element={<PreviousPurchases/>}></Route>
       </Routes>
     </BrowserRouter>
   );

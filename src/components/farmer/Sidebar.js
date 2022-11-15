@@ -29,7 +29,7 @@ function Sidebar(props) {
         >
           <ul className="navbar-nav">
             <li className="nav-item nav-tile">
-              <Link to='/'>
+              <Link to='/farmer'>
               <a
                 className={`nav-link text-white ${dash ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -45,7 +45,7 @@ function Sidebar(props) {
               </h6>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/predictions'>
+              <Link to='/farmer/predictions'>
               <a className={`nav-link text-white ${pred ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
@@ -55,7 +55,7 @@ function Sidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/recommendations'>
+              <Link to='/farmer/recommendations'>
               <a className={`nav-link text-white ${rec ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
@@ -65,7 +65,7 @@ function Sidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/broadcast'>
+              <Link to='/farmer/broadcast'>
               <a className={`nav-link text-white ${broad ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
@@ -75,7 +75,7 @@ function Sidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/farmerbroadcast'>
+              <Link to='/farmer/farmerbroadcast'>
               <a className={`nav-link text-white ${farmbroad ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
@@ -85,7 +85,7 @@ function Sidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/status'>
+              <Link to='/farmer/status'>
               <a className={`nav-link text-white ${status ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
@@ -95,7 +95,7 @@ function Sidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/transactions'>
+              <Link to='/farmer/transactions'>
               <a className={`nav-link text-white ${trans ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
@@ -105,7 +105,7 @@ function Sidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/microfinance'>
+              <Link to='/farmer/microfinance'>
               <a className={`nav-link text-white ${micro ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
@@ -115,7 +115,7 @@ function Sidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/processorRequests'>
+              <Link to='/farmer/processorRequests'>
               <a className={`nav-link text-white ${proreq ? "active bg-gradient-success" : ""}`}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i className="material-icons opacity-10">table_view</i>
