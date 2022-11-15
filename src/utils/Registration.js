@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/Registration.css'
+import block from '../images/logo-ct.png'
 
 function Registration() {
 
@@ -7,6 +8,7 @@ function Registration() {
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand text-white" href="#">
+                    <img src={block} width="30" height="30" class="d-inline-block align-top" alt="" />&nbsp;
                     Registration
                 </a>
             </nav>
@@ -39,6 +41,15 @@ function Registration() {
                             <div className="input-group input-group-outline mb-3">
                                 <textarea id="address" name="address" className="form-control" placeholder='Enter your address here' />
                             </div>
+                            <label className={"label-r"}> Register as:</label>
+                            <select id="soil_type" name="soil_type" className="form-select form-select-lg mb-3" >
+                                        <option selected>Select Role</option>
+                                        <option value="Sandy">Farmer</option>
+                                        <option value="Loamy">Processor</option>
+                                        <option value="Black">Retailer</option>
+                                        <option value="Red">Consumer</option>
+                                        <option value="Clayey">Investor</option>
+                            </select>
                             <p className="note">
                                 <span style={{ color: "tomato" }}> Note: </span>
                                 <br /> Make sure your account address and Phone number are

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/bootstrap.css'
-import '../css/welcomestyle.css'
+import '../css/welcome.css'
 import Farmer from '../images/farmer.png'
 import Quality from '../images/quality.png'
 import Earth from '../images/earth.png'
