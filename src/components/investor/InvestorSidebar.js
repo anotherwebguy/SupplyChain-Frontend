@@ -2,10 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo-ct.png'
 
+function InvestorSidebar(props) {
 
-function RetailerSidebar(props) {
-
-    const {processorbroadcast, dash, prevorder, addreport, broadcastToCustomer} = props;
+    const { dash, farmb, payment, rejected, investments } = props;
 
     return (
         <div className='sidebar-body'>
@@ -25,9 +24,9 @@ function RetailerSidebar(props) {
                 >
                     <ul className="navbar-nav">
                         <li className="nav-item nav-tile">
-                            <Link to='/retailer'>
+                            <Link to='/investor'>
                                 <a
-                                    className={`nav-link text-white ${dash ? "active bg-gradient-warning" : ""}`}>
+                                    className={`nav-link text-white ${dash ? "active bg-gradient-info" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                         <i className="material-icons opacity-10">dashboard</i>
                                     </div>
@@ -36,48 +35,51 @@ function RetailerSidebar(props) {
                             </Link>
                         </li>
                         <li className="nav-item mt-3">
-                            {/* <h6 className="baju ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">
-                Retail-Trade
-              </h6> */}
-                            <div className="ps-4 ms-2 pb-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Features</div>
+                            <h6 className="baju ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">
+                                Features
+                            </h6>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/retailer/processorbroadcast'>
-                                <a className={`nav-link text-white ${processorbroadcast ? "active bg-gradient-warning" : ""}`}>
+                            <Link to='/investor/farmerbroadcast'>
+                                <a
+                                    className={`nav-link text-white ${farmb ? "active bg-gradient-info " : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                                        <i className="material-icons opacity-10">table_view</i>
+                                        <i className="material-icons opacity-10">dashboard</i>
                                     </div>
-                                    <span className="nav-link-text ms-1">Processor Broadcast</span>
+                                    <span className="nav-link-text ms-1">Farmer Broadcast</span>
                                 </a>
                             </Link>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/retailer/previousorders'>
-                                <a className={`nav-link text-white ${prevorder ? "active bg-gradient-warning" : ""}`}>
+                            <Link to='/investor/payments'>
+                                <a
+                                    className={`nav-link text-white ${payment ? "active bg-gradient-info" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                                        <i className="material-icons opacity-10">table_view</i>
+                                        <i className="material-icons opacity-10">dashboard</i>
                                     </div>
-                                    <span className="nav-link-text ms-1">Previous Orders</span>
+                                    <span className="nav-link-text ms-1">Pending Payments</span>
                                 </a>
                             </Link>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/retailer/retailer-report'>
-                                <a className={`nav-link text-white ${addreport ? "active bg-gradient-warning" : ""}`}>
+                            <Link to='/investor/rejected'>
+                                <a
+                                    className={`nav-link text-white ${rejected ? "active bg-gradient-info" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                                        <i className="material-icons opacity-10">table_view</i>
+                                        <i className="material-icons opacity-10">dashboard</i>
                                     </div>
-                                    <span className="nav-link-text ms-1">Add Report</span>
+                                    <span className="nav-link-text ms-1">Rejected Deals</span>
                                 </a>
                             </Link>
                         </li>
                         <li className="nav-item nav-tile">
-                            <Link to='/retailer/broadcastToCustomer'>
-                                <a className={`nav-link text-white ${broadcastToCustomer ? "active bg-gradient-warning" : ""}`}>
+                            <Link to='/investor/investments'>
+                                <a
+                                    className={`nav-link text-white ${investments ? "active bg-gradient-info" : ""}`}>
                                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                                        <i className="material-icons opacity-10">table_view</i>
+                                        <i className="material-icons opacity-10">dashboard</i>
                                     </div>
-                                    <span className="nav-link-text ms-1">Broadcast To Customer</span>
+                                    <span className="nav-link-text ms-1">Investments</span>
                                 </a>
                             </Link>
                         </li>
@@ -88,4 +90,4 @@ function RetailerSidebar(props) {
     )
 }
 
-export default RetailerSidebar
+export default InvestorSidebar

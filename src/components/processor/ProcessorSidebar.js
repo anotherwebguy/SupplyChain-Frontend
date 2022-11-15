@@ -26,7 +26,7 @@ function ProcessorSidebar(props) {
         >
           <ul className="navbar-nav">
             <li className="nav-item nav-tile">
-              <Link to='/'>
+              <Link to='/processor'>
                 <a
                   className={`nav-link text-white ${dash ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -43,7 +43,7 @@ function ProcessorSidebar(props) {
               <div className="ps-4 ms-2 pb-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Retailer Trade</div>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/broadcast'>
+              <Link to='/processor/broadcast'>
                 <a className={`nav-link text-white ${pbroad ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
@@ -53,7 +53,7 @@ function ProcessorSidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/ybroadcasts'>
+              <Link to='/processor/ybroadcasts'>
                 <a className={`nav-link text-white ${ybroad ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
@@ -63,7 +63,7 @@ function ProcessorSidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/orderDetails'>
+              <Link to='/processor/orderDetails'>
                 <a className={`nav-link text-white ${orderDetails ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
@@ -76,7 +76,7 @@ function ProcessorSidebar(props) {
               <div className="ps-4 ms-2 pb-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Farmer Trade</div>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/fbroadcasts'>
+              <Link to='/processor/fbroadcasts'>
                 <a className={`nav-link text-white ${fbroad ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
@@ -86,7 +86,7 @@ function ProcessorSidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/pInterest'>
+              <Link to='/processor/pInterest'>
                 <a className={`nav-link text-white ${pInterest ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
@@ -96,7 +96,7 @@ function ProcessorSidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/payments'>
+              <Link to='/processor/payments'>
                 <a className={`nav-link text-white ${ppayment ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
@@ -106,7 +106,7 @@ function ProcessorSidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/addreport'>
+              <Link to='/processor/addreport'>
                 <a className={`nav-link text-white ${addreport ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
@@ -116,7 +116,7 @@ function ProcessorSidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/reportswithpayment'>
+              <Link to='/processor/reportswithpayment'>
                 <a className={`nav-link text-white ${reportpayment ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
@@ -126,7 +126,7 @@ function ProcessorSidebar(props) {
               </Link>
             </li>
             <li className="nav-item nav-tile">
-              <Link to='/rejected'>
+              <Link to='/processor/rejected'>
                 <a className={`nav-link text-white ${rejected ? "active bg-gradient-danger" : ""}`}>
                   <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className="material-icons opacity-10">table_view</i>
