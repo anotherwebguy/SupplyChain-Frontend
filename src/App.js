@@ -43,6 +43,7 @@ import ProcessorTracking from './components/processor/ProcessorTracking';
 import CustomerTracking from './components/customer/CustomerTracking';
 import RetailerTracking from './components/retailer/RetailerTracking';
 import FarmerStatus from './components/investor/FarmerStatus';
+import YieldBroadcast from './components/farmer/YieldBroadcast';
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
         <Route path='/farmer/transactions' element={<Transactions />}></Route> 
         <Route path='/farmer/predictions/commodity' element={<Crop />}></Route> 
         <Route path='/farmer/status' element={<TrackStatus/>}></Route>
+        <Route path='/farmer/yieldbroadcast' element={<YieldBroadcast/>}></Route>
 
         {/* Investor */}
 
