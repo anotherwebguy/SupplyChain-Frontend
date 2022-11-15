@@ -1,8 +1,8 @@
 import React from 'react'
 
 function NARightCard() {
-  return (
-    <div className='timeline overflow-auto'>
+    return (
+        <div className='timeline overflow-auto'>
             <div className='container-right'>
                 <img className='right-icon' src='https://www.pngall.com/wp-content/uploads/2016/04/Red-Cross-Mark-PNG-File.png' height={80}></img>
                 <div className='card-container-right'>
@@ -23,7 +23,7 @@ function NARightCard() {
                                         <tr>
                                             <td colspan="2"><p>Information Not Avilable</p></td>
                                         </tr>
-                                    </table>  
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ function NARightCard() {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default NARightCard

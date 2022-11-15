@@ -36,6 +36,12 @@ import LeftTimelineCard from './utils/LeftTimelineCard';
 import RightTimelineCard from './utils/RightTimelineCard';
 import Registration from './utils/Registration';
 import Verification from './components/admin/Verification';
+import InvestorHome from './components/investor/InvestorHome';
+import Farmer from './components/investor/Farmer';
+import InvestorFarmerBroadcast from './components/investor/InvestorFarmerBroadcast';
+import InvestorPayments from './components/investor/InvestorPayments';
+import RejectedDeals from './components/investor/RejectedDeals';
+import Investments from './components/investor/Investments';
 
 function App() {
   return (
@@ -60,6 +66,15 @@ function App() {
         <Route path='/admin' element={<Admin />}></Route>
         <Route path='/register' element={<Registration />}></Route>
         <Route path='/verification' element={<Verification />}></Route>
+
+        {/* Investor */}
+
+        <Route path='/investor' element={<InvestorHome/>}></Route>
+        <Route path='/investor/farmerbroadcast' element={<InvestorFarmerBroadcast/>}></Route>
+        <Route path='/investor/farmer' element={<Farmer/>}></Route>
+        <Route path='/investor/payments' element={<InvestorPayments/>}></Route>
+        <Route path='/investor/rejected' element={<RejectedDeals/>}></Route>
+        <Route path='/investor/investments' element={<Investments/>}></Route>
 
         {/* Processor Routing */}
 
