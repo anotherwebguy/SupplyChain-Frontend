@@ -51,7 +51,7 @@ function Commodity() {
     const navigate = useNavigate()
 
     const resultPage = (str)=>{
-        navigate('/predictions/commodity',{state:{name:str}});
+        navigate('/farmer/predictions/commodity',{state:{name:str}});
     }
 
     return (
