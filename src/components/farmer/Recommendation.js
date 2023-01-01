@@ -107,7 +107,7 @@ function Recommendation() {
     const navigate = useNavigate()
 
     const resultPage = ()=>{
-        navigate('/recommendations/result',{state:{data:arr}});
+        navigate('/farmer/recommendations/result',{state:{data:arr}});
     }
     
     return (
