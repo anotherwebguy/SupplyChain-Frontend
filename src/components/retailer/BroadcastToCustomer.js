@@ -25,14 +25,6 @@ function BroadcastToCustomer() {
                             </div>
                             <div className='crop-body'>
                                 <form role="form" action="" method="POST" name="form">
-                                    <select id="processor_keys" name="retailer" class="form-select form-select-lg mb-3" >
-                                        <option selected>Select Processor Keys</option>
-                                        <option value="Sandy">Maize</option>
-                                        <option value="Loamy">Chana</option>
-                                        <option value="Black">Jowar</option>
-                                        <option value="Red">Wheat</option>
-                                        <option value="Clayey">Paddy</option>
-                                    </select>
                                     <select id="produce" name="retailer" class="form-select form-select-lg mb-3" >
                                         <option selected>Select Produce</option>
                                         <option value="Sandy">Maize</option>

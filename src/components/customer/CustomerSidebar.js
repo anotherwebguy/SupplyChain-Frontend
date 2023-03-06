@@ -4,7 +4,7 @@ import logo from '../../images/logo-ct.png'
 
 function CustomerSidebar(props) {
 
-    const {dash, retailer, prevpurchase, status} = props;
+    const {dash, retailer, prevpurchase, status, addreport} = props;
 
   return (
     <div className='sidebar-body'>
@@ -67,6 +67,16 @@ function CustomerSidebar(props) {
                                         <i className="material-icons opacity-10">table_view</i>
                                     </div>
                                     <span className="nav-link-text ms-1">Track Status</span>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="nav-item nav-tile">
+                            <Link to='/customer/report'>
+                                <a className={`nav-link text-white ${addreport ? "active bg-gradient-info" : ""}`}>
+                                    <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                        <i className="material-icons opacity-10">table_view</i>
+                                    </div>
+                                    <span className="nav-link-text ms-1">Add Report</span>
                                 </a>
                             </Link>
                         </li>

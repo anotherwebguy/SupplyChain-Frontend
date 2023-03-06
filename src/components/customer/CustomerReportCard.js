@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-function RetailerReportCard(props) {
+function CustomerReportCard(props) {
 
-    const {product, lotId, productId, quantity}=props
-    const [remarks, setRemarks] = useState("")
-    const [shipment, setShipment] = useState("")
+    const{product, lotId, productId, quantity} = props
+    const[remarks, setRemarks] = useState("");
+    const[shipment, setShipment] = useState("");
 
     function handleSubmit(e){
         e.preventDefault()
@@ -35,10 +35,10 @@ function RetailerReportCard(props) {
                 <div className='farmerproduct-body mt-1'>
                     <form role="form" action="" method="POST" name="form">
                         <div class="input-group input-group-outline mb-3">
-                            <input type="text" id="N" name="N" class="form-control" onChange={e => setRemarks(e.target.value)} placeholder='Remarks' />
+                            <input type="text" id="N" onChange={e => setRemarks(e.target.value)} name="N" class="form-control" placeholder='Remarks' />
                         </div>
                         <div class="input-group input-group-outline mb-3">
-                            <input type="text" id="P" onChange={e => setShipment(e.target.value)} name="P" class="form-control" placeholder='Recieved Shipments' />
+                            <input type="text" id="P" name="P" class="form-control" onChange={e => setShipment(e.target.value)} placeholder='Recieved Shipments' />
                         </div>
                         <div class="text-center">
                             <button name="broadcastCrop" onClick={e => handleSubmit(e)}
@@ -51,4 +51,4 @@ function RetailerReportCard(props) {
     )
 }
 
-export default RetailerReportCard
+export default CustomerReportCard
