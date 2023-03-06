@@ -24,13 +24,9 @@ function RProcessorCard(props) {
                 </div>
                 <div className='farmerproduct-body mt-1'>
                     <form role="form" action="" method="POST" name="form">
-                        <div class="input-group input-group-outline mb-3">
-                            <input type="text" name='retail-quantity' class="form-control" placeholder='Quantity Required' />
-                        </div>
-                        
                         <div class="text-center">
                             <button type="submit" name="broadcastCrop"
-                                class="btn btn-lg bg-gradient-info btn-lg w-100 mt-4 mb-0">Accept</button>
+                                class="btn btn-lg bg-gradient-info btn-lg w-100 mt-2 mb-0">Accept</button>
                         </div>
                     </form>
                 </div>

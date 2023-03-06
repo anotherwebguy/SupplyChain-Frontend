@@ -46,6 +46,7 @@ import FarmerStatus from './components/investor/FarmerStatus';
 import YieldBroadcast from './components/farmer/YieldBroadcast';
 import InvestorDeals from './components/farmer/InvestorDeals';
 import AcceptedDeals from './components/farmer/AcceptedDeals';
+import AddReportCustomer from './components/customer/AddReportCustomer';
 
 function App() {
   return (
@@ -122,6 +123,7 @@ function App() {
         <Route path='/customer/retailerbroadcast' element={<CustomerRetailerBroadcast/>}></Route>
         <Route path='/customer/history' element={<PreviousPurchases/>}></Route>
         <Route path='/customer/status' element={<CustomerTracking/>}></Route>
+        <Route path='/customer/report' element={<AddReportCustomer/>}></Route>
       </Routes>
     </BrowserRouter>
   );
